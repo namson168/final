@@ -46,15 +46,12 @@ class ChargesController < ApplicationController
 			:from => '+14242653879',
 			:to => "#{date.initiator.phone.gsub('-','')}",
 			:body => "Your parent has set you up on a date with #{date.recipient.first_name}",
-			# :media_url => "#{date.recipient.default_pf}"
-			# status_callback: request.base_url + '/twilio/status'
 			)
 
 		message_to_recipient = client.messages.create(
 			:from => '+14242653879',
 			:to => "#{date.recipient.phone.gsub('-','')}",
 			:body => "Your parent has set you up on a date with #{date.initiator.first_name}",
-			# :media_url => "#{date.initiator.default_pf}"
 			)
 	end
 
