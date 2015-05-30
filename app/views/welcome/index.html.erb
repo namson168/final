@@ -1,64 +1,69 @@
-<div class="bg-vid-wrapper">
-  <div class="bg-content">
-    <h1>Bring Home To Mom</h1>
-    <a href="#how-it-works" class="how-btn">How it Works</a>
+<div class="welcome-page-container">
+  <div class="bg-vid-wrapper">
+    <div class="bg-content">
+      <h1>Bring Home To Mom</h1>
+      <a href="#how-it-works" class="how-btn">How it Works</a>
+    </div>
+    <video class = "bg-vid" autoplay loop>
+      <source src="/images/backgrounds/background_vid.webm" type= "video/webm" />
+    </video>
   </div>
-  <video class = "bg-vid" autoplay loop>
-    <source src="/images/backgrounds/background_vid.webm" type= "video/webm" />
-  </video>
+
+  <div id="how-it-works" class="welcome-description">
+    <div class="description-wrapper row">
+      <div class="how-step col span_3">
+
+        <div class="circle-outer">
+          <div class="circle-inner">
+            <i class="fa fa-user-plus fa-5x"></i>
+          </div>
+        </div>
+        <div class="step-txt">
+          <h4>1. Create a profile for your kids!</h4>
+        </div>
+      </div>
+      <div class="how-step col span_3">
+
+        <div class="circle-outer">
+          <div class="circle-inner">
+            <i class="fa fa-search fa-5x"></i>
+          </div>
+        </div>
+        <div class="step-txt">
+          <h4>2. Search for other eligible bachelors and bachelorettes</h4>
+        </div>
+      </div>
+      <div class="how-step col span_3">
+
+        <div class="circle-outer">
+          <div class="circle-inner">
+            <i class="fa fa-calendar fa-5x"></i>
+          </div>
+        </div>
+        <div class="step-txt">
+          <h4>3. Plan the date - pick a time, movie, restaurant, etc.</h4>
+        </div>
+      </div>
+      <div class="how-step col span_3">
+
+        <div class="circle-outer">
+          <div class="circle-inner">
+            <i class="fa fa-heart fa-5x"></i>
+          </div>
+        </div>
+        <div class="step-txt">
+          <h4>4. Sit back and wait for the wedding invitation!</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="get-started-container">
+      <a href="#" class="signup-btn get-started-btn">Get Started!</a>
+    </div>
+
+  </div>
+
+  <%= render partial: 'sign_up_modal' %>
+  <%= render partial: 'log_in_modal' %>
+
 </div>
-
-<div id="how-it-works" class="welcome-description">
-  <div class="description-wrapper row">
-    <div class="how-step col span_3">
-
-      <div class="circle-outer">
-        <div class="circle-inner">
-          <i class="fa fa-user-plus fa-5x"></i>
-        </div>
-      </div>
-
-      <h4>1. Create a profile for your kids!</h4>
-    </div>
-    <div class="how-step col span_3">
-
-      <div class="circle-outer">
-        <div class="circle-inner">
-          <i class="fa fa-search fa-5x"></i>
-        </div>
-      </div>
-
-      <h4>2. Search for other eligible bachelors and bachelorettes</h4>
-    </div>
-    <div class="how-step col span_3">
-
-      <div class="circle-outer">
-        <div class="circle-inner">
-          <i class="fa fa-calendar fa-5x"></i>
-        </div>
-      </div>
-
-      <h4>3. Plan the date - pick a time, movie, restaurant, etc.</h4>
-    </div>
-    <div class="how-step col span_3">
-
-      <div class="circle-outer">
-        <div class="circle-inner">
-          <i class="fa fa-heart fa-5x"></i>
-        </div>
-      </div>
-
-      <h4>4. Sit back and wait for the wedding invitation!</h4>
-    </div>
-  </div>
-
-  <div class="get-started-container">
-    <a href="#" class="signup-btn get-started-btn">Get Started!</a>
-  </div>
-
-</div>
-
-<%= render partial: 'sign_up_modal' %>
-<%= render partial: 'log_in_modal' %>
-<footer>
-</footer>
