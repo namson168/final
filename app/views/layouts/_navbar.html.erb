@@ -2,16 +2,16 @@
   <div class="logo"><a href="/">Bring Home to Mom</a></div>
   <ul>
     <% if user_signed_in? %>
-      <li class="notification">
-        <a class="dashboard" href="/users/<%= current_user.id %>" >(<%= current_user.pending_dates.count + current_user.accepted_dates.count %>) Dashboard</a>
-        <%= render partial: 'layouts/notification_dropdown' %>
-      </li>
-    	<li><%= link_to "Log Out", "/users/sign_out", method: 'delete', class:"logout-button" %><li>
-    <% elsif request.env['PATH_INFO'] == "/" %>
-			<li><a href="#" class="login-btn login-btn-nav">Log In</a></li>
-			<li><a href="#" class="signup-btn signup-btn-nav">Sign Up</a></li>
-		<% end %>
-  </ul>
-</nav>
+    <li class="notification">
+      <a class="dashboard" href="/users/<%= current_user.id %>" >(<%= current_user.pending_dates.count + current_user.accepted_dates.count %>) Dashboard</a>
+      <%= render partial: 'layouts/notification_dropdown' %>
+    </li>
+    <li><%= link_to "Log Out", "/users/sign_out", method: 'delete', class:"logout-button" %><li>
+      <% elsif request.env['PATH_INFO'] == "/" %>
+      <li><a href="#" class="login-btn login-btn-nav">Log In</a></li>
+      <li><a href="#" class="signup-btn signup-btn-nav">Sign Up</a></li>
+      <% end %>
+    </ul>
+  </nav>
   <div class="navbar-filler">
-</div>
+  </div>
