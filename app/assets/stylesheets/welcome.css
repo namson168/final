@@ -1,3 +1,9 @@
+.welcome-page-container {
+  height: 100%;
+  background-image: url("/images/backgrounds/green_texture.png");
+
+}
+
 .navbar-link-wrapper{
   float:right;
   display: inline-block;
@@ -6,7 +12,7 @@
 
 .bg-vid-wrapper {
   position: relative;
-  top: -170px;
+  background-image: url("/images/backgrounds/green_texture.png");
 }
 
 .bg-vid {
@@ -34,6 +40,7 @@
   width: 33em;
   left: 50%;
   top: 50%;
+  z-index: 1;
   transform: translate(-50%, -50%);
 }
 
@@ -57,26 +64,28 @@
 .how-btn:hover {
   color:lightgray;
   background: #F857A6;
-
   color:white;
-
 }
 
 .welcome-description {
   position: relative;
-  top: -175px;
   padding: 14em;
-  /*background-color: #1AB595;*/
   background-image: url("/images/backgrounds/green_texture.png");
 }
 
 .how-step {
   text-align: center;
 }
+
 .how-step h4{
   color:rgb(247, 247, 247);
   font-size: 1.3em;
 }
+
+.step-txt{
+  display: inline-block;
+}
+
 .circle-outer {
   position: relative;
   width: 190px;
@@ -143,8 +152,6 @@
 .form-wrapper input{
   color:black;
   margin-bottom: 1em;
-
-
 }
 
 .form-wrapper form{
@@ -177,13 +184,12 @@
   font-family: 'Raleway', sans-serif;
 }
 
-
-/*Login-external-form*/
 .signup-container{
   background-color: yellow;
 }
 
 @media all and (max-width: 1216px){
+
   .fa-5x{
     font-size: 3em;
   }
@@ -202,18 +208,14 @@
   .circle-outer {
     width: 130px;
     height: 130px;
-
   }
-
 }
 
-
-
 @media all and (max-width: 965px){
+
   .fa-5x{
     font-size: 2em;
   }
-
 
   .circle-inner {
     top: 22px;
@@ -225,32 +227,20 @@
   .circle-outer {
     width: 100px;
     height: 100px;
-
   }
-
 }
 
 @media all and (max-width: 849px){
-  .fa-5x{
-    font-size: 2em;
+
+  .description-wrapper {
+    padding-bottom: 0em;
   }
 
-
-  .circle-inner {
-    top: 15px;
-    left: 19px;
-    width: 40px;
-    height: 40px;
+  .how-step {
+    display: block;
+    float: left;
+    width: 100%;
   }
-
-  .circle-outer {
-    width: 80px;
-    height: 80px;
-
-  }
-
-}
-@media all and (max-width: 767px){
   .fa-5x{
     font-size: 6em;
   }
@@ -269,8 +259,43 @@
   .circle-outer {
     width: 190px;
     height: 190px;
-
   }
-
 }
 
+
+@media all and (max-width: 630px){
+  .fa-5x{
+    font-size: 6em;
+  }
+
+  .welcome-description{
+    padding: 14em 5em;
+  }
+  .description-wrapper.row{
+    width: 200px;
+    margin: 0 auto;
+  }
+  .how-step h4{
+    font-size: 1.3em;
+    width:180px;
+  }
+
+  .circle-inner {
+    top: 25px;
+    left: 25px;
+    width: 140px;
+    height: 140px;
+  }
+
+  .circle-outer {
+    width: 190px;
+    height: 190px;
+  }
+}
+
+@media all and (max-width: 522px){
+
+  .bg-vid-wrapper h1 {
+    font-size: 3em;
+  }
+}

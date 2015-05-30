@@ -18,10 +18,5 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.for(:sign_up) << :last_name
   end
 
-    # def after_sign_up_path_for(resource)
-    #     # new_user_profile_path(current_user)
-    #     # "users/#{resource.id}/profiles/new"
-    # end
-
 end
 
