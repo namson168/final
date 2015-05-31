@@ -303,6 +303,12 @@
 
 
 @media only screen and (max-device-width: 1000px){
+  .bg-content {
+    height: auto;
+    width: 100%;
+    z-index: 1;
+  }
+
 
   .bg-vid-wrapper {
     background-size: cover;
