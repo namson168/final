@@ -146,7 +146,6 @@ dbc_students =
     ['Henry', 'Vega', 'male', 'https://secure.gravatar.com/avatar/fc34b7ca5e5340fa2bbd875abebe4c3f.png?r=PG&d=mm&s=300'],
     ['Jack', 'Zampolin', 'male', 'https://secure.gravatar.com/avatar/d4f28bf7154cc2f2172a2738f20f590f.png?r=PG&d=mm&s=300'],
     ['Jacob', 'Moyle', 'male', 'https://secure.gravatar.com/avatar/4ff536222604ca4277f37bd95b455300.png?r=PG&d=mm&s=300'],
-    ['Janet', 'Brown', 'female', 'https://secure.gravatar.com/avatar/13de1fc4c41fb6214c540b2bd3aa256f.png?r=PG&d=mm&s=300'],
     ['Jason', 'Zhao', 'male', 'https://secure.gravatar.com/avatar/0705a663ab8f576a993a0234619913b1.png?r=PG&d=mm&s=300'],
     ['Jeanine', 'Loughlin', 'female', 'https://secure.gravatar.com/avatar/b432d6cc83b6b6d356d26afb192e1b85.png?r=PG&d=mm&s=300'],
     ['Jerome', 'Chenette', 'male', 'https://secure.gravatar.com/avatar/ff56b05d9ee00f9179232064df4c168c.png?r=PG&d=mm&s=300'],
@@ -413,8 +412,8 @@ exp2 = Experience.create!(
 exp3 = Experience.create!(
     venue: "Ghirardelli Square",
     address: "Ghirardelli Square, San Francisco, CA 94109",
-    desc_summary: "Cheese Chocolate Festival",
-    desc_note_1: "Over 50 vendors and culinary demos by typ dessert professionals",
+    desc_summary: "Chocolate Festival",
+    desc_note_1: "Over 50 vendors and culinary demos by top dessert professionals",
     desc_note_2: "Explore the popular Chocolate & Wine Pavillion",
     desc_note_3: "100% of profits donated to Project Open Hand non-profit",
     price_per_person: 60,
@@ -429,7 +428,7 @@ exp4 = Experience.create!(
     desc_note_2: "Urban-rustic setting for a changing menu of American small plates served dim-sum style",
     desc_note_3: "Truly one-of-a-kind, farm-to-table dining experience",
     price_per_person: 60,
-    image: 'http://images.shulcloud.com/626/uploads/20140625172135-435_tastyimageadult.jpg',
+    image: 'http://www.chow.com/blog-media/2012/04/state_bird_provisions_carousel_620x413.jpg',
     experience_at: Faker::Time.forward(50, :evening),
 )
 exp5 = Experience.create!(
