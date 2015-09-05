@@ -79,6 +79,6 @@ We solidified our knowledge on existing technologies while learning new APIs (St
 ![Payment](https://raw.githubusercontent.com/berkjon/bring-home-to-mom/master/public/images/screenshots/08_payment.png "Payment")
 
 #### 8) MMS Notifications
-* After both parents have paid, their children are sent a MMS notification with details of the upcoming event
+* After both parents have paid, their children instantly receive MMS notifications with details of the upcoming event
 
 ![MMS Notifications](https://raw.githubusercontent.com/berkjon/bring-home-to-mom/master/public/images/screenshots/09_mms_both.png "MMS Notifications")
