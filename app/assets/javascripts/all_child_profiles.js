@@ -24,7 +24,7 @@ $(document).on('page:change', function(e) {
 		}).done(function(data) {
 			var child = data.profile
 
-			$('h1').attr('data-gender', child.gender);
+			$('.child-name').attr('data-gender', child.gender);
 
 			if (child.sexual_preference === 'men') {
 			  child.gender = 'male';

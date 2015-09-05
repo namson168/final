@@ -44,13 +44,15 @@ def notify(date)
   message_to_initiator = client.messages.create(
    :from => '+14242653879',
    :to => "#{date.initiator.phone.gsub('-','')}",
-   :body => "Your parent has set you up on a date with #{date.recipient.first_name}",
+   :body => "Your mom/dad just bought you a date to #{date.experience.venue} on #{date.experience.experience_at_formatted} with #{date.recipient.first_name} #{date.recipient.last_name}! Here's a peek of what to expect...",
+   :media_url => "#{date.recipient.pf_image_1}",
    )
 
   message_to_recipient = client.messages.create(
    :from => '+14242653879',
    :to => "#{date.recipient.phone.gsub('-','')}",
-   :body => "Your parent has set you up on a date with #{date.initiator.first_name}",
+   :body => "Your mom/dad just bought you a date to #{date.experience.venue} on #{date.experience.experience_at_formatted} with #{date.initiator.first_name} #{date.initiator.last_name}! Here's a peek of what to expect...",
+   :media_url => "#{date.initiator.pf_image_1}",
    )
 end
 
