@@ -1,6 +1,6 @@
 ![Landing Page](https://raw.githubusercontent.com/berkjon/bring-home-to-mom/master/public/images/screenshots/01_landing_page_webm_clean.png "Landing Page")
 
-*(Watch the [Product Demo Video](https://www.youtube.com/watch?v=IlpoisuHNxc "Product Demo") on YouTube)*
+> *Watch the [Product Demo Video](https://www.youtube.com/watch?v=IlpoisuHNxc "Product Demo") on YouTube*
 
 [Bring Home To Mom](http://bringhometomom.herokuapp.com/) is a match-making and date-planning app for parents. Parents create profiles for their children, browse and filter for potential matches, plan dates while communicating with the other child's parent, and split the cost of the upcoming date so everything is prepaid!
 
@@ -10,10 +10,8 @@ We utilized the Agile development techniques to deliver a complete, feature-full
 
 We solidified our knowledge on existing technologies while learning new APIs (Stripe, Twilio, Cloudinary, Rotten Tomatoes, and OMBD).
 
-##### Technologies & APIs include:
-![Technologies & APIs](https://raw.githubusercontent.com/berkjon/bring-home-to-mom/master/public/images/screenshots/10_technologies_apis.png "Technologies & APIs")
-
-##### Product features include:
+## Product & Technology
+#### Product Features:
 * Create child profiles
 * Smart matching system based on filters and interests
 * Autocomplete search
@@ -25,6 +23,12 @@ We solidified our knowledge on existing technologies while learning new APIs (St
 * Text notifications
 * Responsive design
 * Asynchronous updates for best user experience and minimal page reloads
+
+#### Technologies & APIs:
+![Technologies & APIs](https://raw.githubusercontent.com/berkjon/bring-home-to-mom/master/public/images/screenshots/10_technologies_apis.png "Technologies & APIs")
+
+#### Database Schema:
+![Database Schema](https://raw.githubusercontent.com/berkjon/bring-home-to-mom/master/public/images/screenshots/11_database_schema.png "Database Schema")
 
 
 ## Screen Grabs
