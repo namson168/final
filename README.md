@@ -6,9 +6,11 @@
 
 **Team Members**: Jonathan Berk, Sofie Garden, Kevin Ceballos, Tony Mai
 
-We utilized the Agile development techniques to deliver a complete, feature-full product under a tight 7-day period. We created the structure/backbone of our app as a team, pair-programmed on challenging features, and worked solo to learn and implement new technologies. When working individually, we focused on discrete vertical slices (separate features) to ensure minimal Git workflow conflicts, and when conflicts arose, we resolved them systematically.
+Product was built in a single 7-day sprint, using agile development principles. We created the structure/backbone of our app as a team, pair-programmed on challenging features, and worked solo to learn and implement new technologies. When working individually, we focused on discrete features to minimize Git workflow conflicts.
 
-We solidified our knowledge on existing technologies while learning new APIs (Stripe, Twilio, Cloudinary, Rotten Tomatoes, and OMBD).
+Ruby on Rails backend with custom JavaScript, jQuery and CSS frontend.  PostgreSQL database on Heroku.  API integrations include Stripe, Twilio, Cloudinary, Rotten Tomatoes, and OMBD.
+
+*[Early 2018 note: The use of Game of Thrones characters in the demo / screenshots is totally unrelated to the underlying product.  This was supposed to be a little tongue in cheek back in 2015, but particularly given the show's story arc since then, this probably won't age well.]*
 
 ## Product & Technology
 #### Product Features:
