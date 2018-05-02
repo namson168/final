@@ -5,6 +5,6 @@ test:
   server: "http://localhost:9292/faye"
   secret_token: "secret"
 production:
-  server: "http://bringhomemessenger.herokuapp.com/faye"
-  secret_token: ENV['FAYE_SECRET_TOKEN']
+  server: "http://example.com/faye"
+  secret_token: "0813167268ff50b415fa86a09fe80db30420f23ab27dea3e8f7c0b0f41722530"
   signature_expiration: 3600 # one hour

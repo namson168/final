@@ -1,5 +1,10 @@
 class MessagesController < ApplicationController
   before_filter :authenticate_user!
+  
+  def index
+    @messages = Message.all
+    @new_message = @playdate.messages.build
+  end
  
   def create
     @playdate = Playdate.find(params[:date_id])

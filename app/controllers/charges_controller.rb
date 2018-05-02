@@ -25,7 +25,7 @@ class ChargesController < ApplicationController
     elsif current_user == date.recipient.parent
      date.recipient_paid = true
      date.save!
-   end
+    end
 
    if date.status == 'paid'
      notify(date)
@@ -39,17 +39,17 @@ class ChargesController < ApplicationController
 end
 
 def notify(date)
-  client = Twilio::REST::Client.new ENV['twilio_account_sid'], ENV['twilio_auth_token']
+  client = Twilio::REST::Client.new ENV['TWILIO_ACCOUNT_SID'], ENV['TWILIO_AUTH_TOKEN']
 
   message_to_initiator = client.messages.create(
-   :from => '+14242653879',
+   :from => '+16622226017',
    :to => "#{date.initiator.phone.gsub('-','')}",
    :body => "Your mom/dad just bought you a date to #{date.experience.venue} on #{date.experience.experience_at_formatted} with #{date.recipient.first_name} #{date.recipient.last_name}! Here's a peek of what to expect...",
    :media_url => "#{date.recipient.pf_image_1}",
    )
 
   message_to_recipient = client.messages.create(
-   :from => '+14242653879',
+   :from => '+16622226017',
    :to => "#{date.recipient.phone.gsub('-','')}",
    :body => "Your mom/dad just bought you a date to #{date.experience.venue} on #{date.experience.experience_at_formatted} with #{date.initiator.first_name} #{date.initiator.last_name}! Here's a peek of what to expect...",
    :media_url => "#{date.initiator.pf_image_1}",
